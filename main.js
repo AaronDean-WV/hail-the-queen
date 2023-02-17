@@ -1,19 +1,34 @@
-// /*
-//     Define a function with a single parameter. When the function
-//     is invoked, an argument is required.
-// */
+/*
+    Define a function with a single parameter. When the function
+    is invoked, an argument is required.
+*/
 
 
-const hailTheQueen = (nameString) => {
+const queens = []
+
+const createQueen = (queenId, queenName) => { //define the parameters
+    const queenObject = {
+        id: queenId,
+        name:queenName,
+    }
+
+    queens.push(queenObject)
+}
+
+createQueen(1, "Trinity Terry")
+createQueen(2, "Olivea Dean")
+
+const hailTheQueen = 0(nameString) => {
     return `Hail Her Majesty, ${nameString}.`  // This function returns a string
-};
+}
 
 
-const athena = hailTheQueen("Athena Perez") // Argument value is "Athena Perez"
-console.log(athena); 
 
-const charisse = hailTheQueen("Charisse Ford") // Argument value is "Charisse Ford"
-console.log(charisse)
-
-const jenna = hailTheQueen("Jenna Solis") // Argument value is "Jenna Solis"
-console.log(jenna)
+for (const queen of queens) {
+    const hailMessage = hailTheQueen(queenObject.name)  // What should be passed as an argument?
+    console.log(hailMessage)
+}
+payTribute(1, "Food")
+for (const queen of queens) {
+   
+}
